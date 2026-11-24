@@ -1,6 +1,6 @@
 # LDCT-Recon: deep-learning enhancement of low-dose CT
 
-Author: Aryaman Singh. Course: Digital Image Processing.
+Contributors: Aryaman Singh, Sagar Maheshwari. Course: Digital Image Processing.
 
 A neural network that removes noise from low-radiation CT slices while keeping anatomy intact, compared with classical
 image-processing filters on real patient data (Mayo Clinic LDCT-and-Projection-data, TCIA).
@@ -34,7 +34,7 @@ On a 2-patient test, the model also beat the best tuned classical filter (non-lo
 
 ## Setup (Windows, PowerShell)
 
-```
+```powershell
 python -m venv .venv
 .venv\Scripts\activate
 # install PyTorch with the exact command shown on pytorch.org for your CUDA version, then:
@@ -44,7 +44,7 @@ pip install -r requirements-serving.txt
 
 ## Reproduce
 
-```
+```powershell
 python dataset.py from-folder --organ liver --dicom-dir D:/ldct_dicom
 python model.py compare --organ liver --epochs 30 --archs resunet unet dncnn redcnn cnn
 python extras.py all --organ liver --arch resunet
@@ -53,7 +53,7 @@ python test_serving.py
 ```
 
 Run the website:
-```
+```powershell
 uvicorn server:app --host 127.0.0.1 --port 8000     # terminal 1 (needed only for the Live demo page)
 streamlit run app_site.py                           # terminal 2
 ```
