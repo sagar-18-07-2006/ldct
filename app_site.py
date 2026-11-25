@@ -25,9 +25,9 @@ PROJECT = dict(
     name="LDCT-Recon",
     tagline="Deep-learning enhancement of low-dose CT scans",
     author="Sagar Maheshwari",
-    course="Digital Image Processing",   # e.g. "Digital Image Processing, Semester 5"
-    guide="",                            # your professor's name (leave "" to hide)
-    institution="",                      # your college (leave "" to hide)
+    course="Digital Image Processing", 
+    guide="",                          
+    institution="",                     
     year="2026",
 )
 ROOT = Path(os.environ.get("LDCT_HOME", Path(__file__).resolve().parent))  # folder that contains data/, runs/, results/
