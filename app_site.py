@@ -24,7 +24,7 @@ import streamlit as st
 PROJECT = dict(
     name="LDCT-Recon",
     tagline="Deep-learning enhancement of low-dose CT scans",
-    author="Aryaman Singh",
+    author="Sagar Maheshwari",
     course="Digital Image Processing",   # e.g. "Digital Image Processing, Semester 5"
     guide="",                            # your professor's name (leave "" to hide)
     institution="",                      # your college (leave "" to hide)
